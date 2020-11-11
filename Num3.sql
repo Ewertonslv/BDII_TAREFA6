@@ -6,6 +6,6 @@ BEGIN
 	SET totalVoos = (SELECT COUNT(*)
 				    FROM cliente_Voo cv
 				    WHERE cliente = cv.cliente);       
-	RETURN n;
+	RETURN totalVoos;
 END $
 DELIMITER ;
